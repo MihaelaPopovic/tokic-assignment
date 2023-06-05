@@ -1,0 +1,202 @@
+:root {
+  --base-100: #1C1C1C;
+  --base-200: #585757;
+  --base-300: #969696;
+  --base-400: rgba(0, 0, 0, 0.15);
+  --base-500: rgba(0, 0, 0, 0.04);
+  --base-600: #FFFFFF;
+
+  --primary-100: #004289;
+  --primary-200: #0F5096;
+  --error: #EF4147;
+
+  --bg-100: #FEFEFE;
+  --bg-200: #F8F8F8;
+  --bg-300: #EFEFEF;
+
+  --h3-font-size: 24px;
+  --h4-font-size: 18px;
+  --h5-font-size: 16px;
+
+  --font-family: "Satoshi";
+}
+
+
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi-Regular"),
+    url("./fonts/Satoshi-Regular.otf") format("truetype");
+  font-weight: bold;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: 14px;
+}
+p {
+  font-family: var(--font-family);
+}
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 5px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: 'Satoshi';
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+
+}
+.primary-btn-icon {
+  padding: 5px !important;
+}
+.primary-btn{
+  background: var(--primary-100);
+  color: var(--base-600);
+}
+
+.primary-btn-l, .default-btn-l,.tertiary-btn-l{
+  height: 44px;
+  font-size: 24px;
+}
+
+.primary-btn-s, .default-btn-s,.tertiary-btn-s {
+  height: 35px;
+  font-size: 18px;
+}
+
+.primary-btn:disabled {
+  pointer-events: none;
+  background: var(--base-400);
+  opacity: 0.9;
+  border-radius: 3px;
+}
+
+.primary-btn:hover {
+  background: var(--primary-200);
+  opacity: 0.9;
+}
+
+.ant-modal .ant-modal-content .ant-modal-header .ant-modal-title {
+  font-family: var(--font-family);
+  font-size: 24px;
+  color: var(--base-100)
+}
+
+.default-btn {
+  border: 1px solid var(--base-200);
+  color: var(--base-100);
+}
+
+.default-btn:hover {
+  background-color: var(--base-500) !important;
+  border: 1px solid var(--base-200) !important;
+  color: var(--base-100) !important;
+}
+.default-btn:disabled {
+  pointer-events: none;
+  background-color: var(--base-400) !important;
+  color: var(--base-300) !important;
+}
+.tertiary-btn {
+  color: var(--base-100);
+  background-color: unset;
+}
+
+.tertiary-btn:hover {
+  background-color: var(--base-500) !important;
+}
+.tertiary-btn:disabled {
+  pointer-events: none;
+  background-color: var(--base-400) !important;
+  color: var(--base-300) !important;
+}
+.link-btn {
+  padding: 0px !important;
+  background-color: unset;
+  color: var(--primary-100);
+}
+
+.link-btn:hover {
+  text-decoration-line: underline;
+}
+.h3 {
+  font-size: var(--h3-font-size);
+
+}
+.h4{
+  font-size: var(--h4-font-size);
+}
+.h5{
+  font-size: var(--h5-font-size);
+}
+.blue {
+  color: var(--primary-100);
+}
+.space {
+  margin-right: 15px;
+  font-weight: 600;
+}
+.s-space {
+  margin-left: 5px;
+}
+.error-msg {
+  color: var(--error);
+  margin: 0px;
+}
+.ant-form-item-explain-error  {
+  color: var(--error) !important;
+}
+.base {
+  color: var(--base-200);
+}
+.black {
+  color: var(--base-100);
+}
