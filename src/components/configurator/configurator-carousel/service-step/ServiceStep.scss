@@ -1,0 +1,44 @@
+.services {
+    column-count: 2;
+    column-gap: 10px;
+    .ant-checkbox-wrapper {
+        span {
+            display: flex;
+        }
+    }
+}
+.price-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 520px;
+    height: 90px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--bg-200);
+    .side {
+        display: flex;
+        .h4 {
+            margin-block: 0px;
+        }
+    }
+    .promo {
+        flex-direction: column;
+        .promo-wrapper {
+            display: flex;
+            margin-top: 10px;
+            .ant-input {
+                width: 150px;
+                background-color: var(--base-500);
+                border-radius: 3px;
+                margin-right: 5px;
+            }
+            input::placeholder {
+                color: var(--base-200);
+            }
+            input:active {
+                border: 1px solid var(--primary-200);
+            }
+        }
+    }
+}

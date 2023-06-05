@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    &.center {
+        justify-content: center !important;
+    }
+    .default-btn {
+        margin-right: 15px;
+    }
+}

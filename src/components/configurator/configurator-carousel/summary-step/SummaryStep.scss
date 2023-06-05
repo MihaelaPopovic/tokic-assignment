@@ -1,0 +1,70 @@
+.middle {
+    .h5 {
+        margin: 0px;
+    }
+}
+
+.summary-wrapper {
+    width: 540px;
+    background-color: var(--bg-200);
+
+    .details-wrapper {
+        margin-inline: 10px;
+
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+
+            .service-detail {
+                display: flex;
+                justify-content: space-between;
+
+                .h5 {
+                    margin: 0px;
+                }
+            }
+
+        }
+
+        .price-details {
+            .price {
+                display: flex;
+                justify-content: flex-end;
+                .h5 {
+                    margin: 5px;
+                    text-align: center;
+                }
+                .base {
+                    width: 100px;
+                }
+            }
+        }
+
+        .form-details {
+            .input-wrapper {
+                display: flex;
+                .base {
+                    width: 150px;
+                }
+                .h5 {
+                    margin: 0px;
+                    line-height: 30px;
+                }
+
+                .description {
+                    max-width: 350px;
+                }
+            }
+        }
+
+        .border {
+            border-bottom: 1px solid var(--base-400);
+        }
+    }
+}
