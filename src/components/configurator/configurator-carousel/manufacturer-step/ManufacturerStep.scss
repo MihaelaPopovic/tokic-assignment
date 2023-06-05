@@ -1,0 +1,14 @@
+.bottom {
+    .ant-radio-group {
+
+        column-count: 3;
+        column-gap: 55px;
+        .text {
+            font-size: 16px;
+            margin-block: 5px;
+        }
+    }
+}
+.top {
+    display: flex;
+}
