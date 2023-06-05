@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+    height: 100%;
+
+    .blue {
+        color: var(--primary-100);
+    }
+}
